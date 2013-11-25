@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dawg Pizza</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="shortcut icon" href="img/logo-small.png">
+		<meta name="author" content="loufan">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+		<script src="js/menu.js"></script>
+		<script src="js/render-items.js"></script>
+	</head>
+
+	<body class="page-menu">
+		<div class="container">
+			<!--#include virtual="inc/header.html" -->
+
+			<h2>All pizzas can be customized--add a few ingredients, or take a few off--for an extra $2.</h2>
+			<dl>
+				<dt>All our pizzas are made with hand-thrown thin crust, baked in real wood ovens. Choose from one of these sizes:</dt>
+					<dd>Small (12")</dd>
+					<dd>Medium (14")</dd>
+					<dd>Large (17")</dd>
+			</dl>
+
+			<div class="row marketing">
+				<div class="col-lg-4">
+					<h3>Meat Pies:</h3>
+					<dl class="meat"></dl>
+				</div>
+
+				<div class="col-lg-4">
+					<h3>Vegetarian Pies:</h3>
+					<dl class="veg"></dl>
+				</div>
+
+				<div class="col-lg-4">
+					<h3>Drinks:</h3>
+					<ul class="drink"></ul>
+
+					<h3>Dessert:</h3>
+					<ul class="dessert"></ul>
+				</div>
+			</div> <!-- row marketing end -->
+
+			<!--#include virtual="inc/footer.html" -->
+		</div> <!-- container end -->
+	</body>
+</html>

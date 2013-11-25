@@ -1,0 +1,36 @@
+.page-index {
+	background: url(../img/pizza1.jpg) no-repeat center center fixed;
+	background-size: cover;
+	background-color: #EBECE4;
+}
+
+.page-about {
+	background: url(../img/pizza-oven.jpg) no-repeat center center fixed;
+	background-size: cover;
+	background-color: #EBECE4;
+}
+
+.page-menu {
+	background: url(../img/pizza-order.jpg) no-repeat center center fixed;
+	background-size: cover;
+	background-color: #EBECE4;
+}
+
+.container {
+	background: rgba(255,255,255,0.7);
+	border-radius: 5px;
+	padding-top: 80px;
+	padding-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+	.video {
+		display: none;
+	}
+}
+
+hr {
+	color: #000;
+	border-color: #000;
+	height: 2px;
+}

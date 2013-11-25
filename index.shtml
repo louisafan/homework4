@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dawg Pizza</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="shortcut icon" href="img/logo-small.png">
+		<meta name="author" content="loufan">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+		<script src="js/render-items.js"></script>
+	</head>
+
+	<body class="page-index">
+		<div class="container">
+			<!--#include virtual="inc/header.html" -->
+
+			<div class="jumbotron">
+				<h1 class="time-specific-message"></h1>
+				<p>Our business hours are 10:00am to 11:00pm, Monday through Saturday.</p>
+				<p><a class="btn btn-primary btn-lg" role="button" href="menu.shtml"></a></p>
+			</div>
+
+			<p>Call us to make a reservation today: 206-555-1212 or, stop by: 4306 University Way NE, Seattle, WA 98105</p>
+
+			<!--#include virtual="inc/footer.html" -->
+		</div> <!-- container end -->
+	</body>
+</html>
