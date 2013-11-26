@@ -34,3 +34,24 @@ hr {
 	border-color: #000;
 	height: 2px;
 }
+
+li {
+	list-style-type: none;
+}
+
+.templates {
+	display: none;
+}
+
+.total-price {
+	font-weight: bold;
+}
+
+.cart-container {
+	padding-bottom: 1px solid #AAA;
+}
+
+.personal {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}

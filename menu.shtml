@@ -26,6 +26,8 @@
 					<dd>Large (17")</dd>
 			</dl>
 
+			<a class="btn btn-primary place-order" role="button" href="order.shtml">Order Online</a>
+
 			<div class="row marketing">
 				<div class="col-lg-4">
 					<h3>Meat Pies:</h3>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dawg Pizza</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="shortcut icon" href="img/logo-small.png">
+		<meta name="author" content="loufan">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+		<script src="js/menu.js"></script>
+		<script src="js/order.js"></script>
+	</head>
+
+	<body class="page-index">
+		<div class="container">
+			<!--#include virtual="inc/header.html" -->
+
+			<h2>We deliver from 12:00pm to 11:00pm, anywhere within Seattle city limits.</h2>
+			<h3>$20 minimum order. We take cash or credit upon delivery.</h3>
+
+			<div class="templates">
+				<p>
+					<div class="col-xs-10">
+						<button type="button" class="btn btn-default btn-xs remove-item">&times;</button>
+						<span class="templateTitle"></span>
+					</div>
+
+					<div class="col-xs-2 col-price">
+						$<span class="templatePrice"></span>
+					</div>
+				</p>
+			</div> <!-- .templates -->
+
+			<div class="row">
+				<div class="col-md-4 col-md-push-8">
+					<h4>Your Cart</h4>
+					<div class="cart-container"></div>
+					<div class="cart-footer">
+						<div class="row total-row">
+							<div class="col-xs-10">
+								Sub-total:
+							</div>
+							<div class="col-xs-2">
+								$<span class="subtotal-price">0.00</span>
+							</div>
+							<div class="col-xs-10">
+								Tax:
+							</div>
+							<div class="col-xs-2">
+								$<span class="tax-price">0.00</span>
+							</div>
+							<div class="col-xs-10">
+								Total:
+							</div>
+							<div class="col-xs-2">
+								$<span class="total-price">0.00</span>
+							</div>
+						</div>
+
+						<div class="personal">
+							<p><label class="col-lg-2 control-label" for="first-name">Name</label>
+							<input type="text" class="form-control" name="first-name" id="first-name" placeholder="first and last name" required></p>
+
+							<p><label class="col-lg-2 control-label" for="addr-1">Address</label>
+							<input type="text" class="form-control" name="addr-1" id="addr-1" placeholder="street address" required></p>
+
+							<p><label class="col-lg-2 control-label" for="zip">Zip</label>
+							<input type="text" class="form-control" name="zip" placeholder="zip code" required></p>
+
+							<p><label class="col-lg-2 control-label" for="phone">Phone</label>
+							<input type="tel" class="form-control" name="phone" id="phone" placeholder="primary phone number" required></p>
+						</div>
+
+						<div class="row">
+							<div class="col-xs-12 button-row">
+								<button type="button" class="btn btn-primary place-order">Place My Order</button>
+							</div>
+							<form method="POST" action="http://dawgpizza.com/orders/" class="cart-submit" role="form">
+								<input type="hidden" name="cart">
+							</form>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-8 col-md-pull-4">
+					<div class="food-container">
+						<h3>Meat Pies:</h3>
+						<dl class="meatpies"></dl>
+
+						<h3>Vegetarian Pies:</h3>
+						<dl class="vegpies"></dl>
+
+						<h3>Drinks:</h3>
+						<ul class="drinklist"></ul>
+
+						<h3>Dessert:</h3>
+						<ul class="dessertlist"></ul>
+					</div>
+				</div>
+			</div>
+
+			<!--#include virtual="inc/footer.html" -->
+		</div> <!-- container end -->
+
+	</body>
+</html>
